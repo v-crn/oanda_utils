@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+autopep8 = "*"
+flake8-import-order = "*"
+
+[packages]
+oandapyV20 = "0.6.3"
+pandas = "1.1.1"
+requests = "*"
+python-dotenv = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+lint = "flake8 --show-source ."
+format = "autopep8 -ivr ."
